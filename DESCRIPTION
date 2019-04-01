@@ -1,0 +1,19 @@
+Package: open-science-framework
+Title: Open Science Framework Brownbag
+Version: 0.1.0
+Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
+                  role = c("aut", "cre"))
+Description: This repository contains some of the lesson materials used as
+    part of our Open Science Framework brownbag presentation. Other materials
+    are contained in the corresponding OSF repository.
+Depends: R (>= 3.3)
+License: CC-BY-SA-4.0 + LICENSE
+Web: https://slu-dss.github.io
+URL: https://github.com/slu-dss/open-science-framework
+BugReports: https://github.com/slu-dss/open-science-framework/issues
+Imports:
+    dplyr,
+    gapminder,
+    knitr,
+    rmarkdown,
+    usethis
