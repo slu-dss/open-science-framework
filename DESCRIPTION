@@ -14,4 +14,5 @@ BugReports: https://github.com/slu-dss/open-science-framework/issues
 Imports:
     here,
     knitr,
-    rmarkdown
+    rmarkdown,
+    xaringan
