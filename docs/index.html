@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Making Science More Open</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Chris Prener" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Making Science More Open
+## An Introduction to the Open Science Framework
+### Chris Prener
+### April 2nd, 2019
+
+---
+
+
+# What We're All About
+
+We're in our **seventh semester** of offering seminars on using `R` for data science.
+
+&lt;/br&gt;
+
+We were founded in **2015** by Chris, Christina Garcia and Kelly Lovejoy.
+
+&lt;/br&gt;
+
+We are a **collaborative, interdisciplinary** group at Saint Louis University focused on **building community** around open source software and open science.
+
+---
+
+# What We're All About
+
+We ❤️ `R`, RStudio, open data, and open science!
+
+--
+
+&lt;/br&gt;
+
+Our seminars cover *most* of data science workflow from Wickham and Grollman (2016):
+
+&lt;img src="/Users/chris/GitHub/DSS/open-science-framework/img/workflow.png" width="689" /&gt;
+
+---
+
+# The State of Academic Research
+
+Woelfle, Olliaro, and Todd (2011): 
+
+&gt; Academia is associated with the free transmission of data and resources, but in many ways this is no longer how it operates. The scientific community generally works towards common goals by competition between closed groups of scientists and communicates research results through publications relying on pre-publication peer-review. Papers frequently omit some experimental information, or ignore negative results. The delays involved in publication of papers, or reviewing of grants are significant.
+
+---
+
+# The Replication "Crisis"
+
+&lt;img src="/Users/chris/GitHub/DSS/open-science-framework/img/Baker_2016_1.jpeg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Uneven Responses to the Replication "Crisis"
+
+&lt;img src="/Users/chris/GitHub/DSS/open-science-framework/img/Baker_2016_2.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Uneven Responses to the Replication "Crisis"
+
+&lt;img src="/Users/chris/GitHub/DSS/open-science-framework/img/GertlerEtAl_2018_1.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Uneven Responses to the Replication "Crisis"
+
+&lt;img src="/Users/chris/GitHub/DSS/open-science-framework/img/GertlerEtAl_2018_2.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Open Science to the Rescue?
+
+One problem is that we do not have a cohesive definition of open science. Is it publishing data online? Providing code? Something else?
+
+--
+
+&lt;/br&gt;
+
+Gertler, Galiani, and Romero (2018):
+
+&gt; We were able to replicate only a small minority of these papers. Overall, of the 203 studies, 76% published at least one of the 4 files required for replication: the raw data used in the study (32%); the final estimation data set produced after data cleaning and variable manipulation (60%); the data-manipulation code used to convert the raw data to the estimation data (42%, but only 16% had both raw data and usable code that ran); and the estimation code used to produce the final tables and figures (72%).
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. the raw data used in the study
+2. the final estimation data set produced after data cleaning and variable manipulation
+3. the data-manipulation code used to convert the raw data to the estimation data
+4. the estimation code used to produce the final tables and figures
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. pre-registered hypotheses
+2. protocols and research materials
+3. research logs
+4. the raw data used in the study
+5. the final estimation data set produced after data cleaning and variable manipulation
+6. the data-manipulation code used to convert the raw data to the estimation data
+7. the estimation code used to produce the final tables and figures
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. pre-registered hypotheses
+2. protocols and research materials
+3. research logs
+4. the raw data used in the study
+5. the final estimation data set produced after data cleaning and variable manipulation
+6. the data-manipulation code used to convert the raw data to the estimation data
+7. the estimation code used to produce the final tables and figures
+8. all code should run on any computer
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. pre-registered hypotheses
+2. protocols and research materials
+3. research logs
+4. the raw data used in the study
+5. the final estimation data set produced after data cleaning and variable manipulation
+6. the data-manipulation code used to convert the raw data to the estimation data
+7. the estimation code used to produce the final tables and figures
+8. all code should run on any computer
+9. all of the above materials should be available online in a format that makes them citeable
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. pre-registered hypotheses
+2. protocols and research materials
+3. research logs
+4. the raw data used in the study
+5. the final estimation data set produced after data cleaning and variable manipulation
+6. the data-manipulation code used to convert the raw data to the estimation data
+7. the estimation code used to produce the final tables and figures
+8. all code should run on any computer
+9. all of the above materials should be available online in a format that makes them citeable
+10. results are available without paywall
+
+---
+
+# How do we do this?
+
+1. Use the Open Science Framework (OSF) for:
+    * pre-registration
+    * cataloging **all** research materials
+    * creating a DOI number to make work citeable
+    * publish pre-prints of findings
+
+---
+
+# How do we do this?
+
+1. Use the Open Science Framework (OSF) for:
+    * pre-registration
+    * cataloging **all** research materials
+    * creating a DOI number to make work citeable
+    * publish pre-prints of findings
+2. If you want to make data citeable independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
+
+---
+
+# How do we do this?
+
+1. Use the Open Science Framework (OSF) for:
+    * pre-registration
+    * cataloging **all** research materials
+    * creating a DOI number to make work citeable
+    * publish pre-prints of findings
+2. If you want to make data citeable independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
+3. If you want the most robust option for executable code, pair OSF with GitHub or Gitlab
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
