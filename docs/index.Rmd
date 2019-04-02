@@ -37,7 +37,7 @@ We `r emojifont::emoji('heart')` `R`, RStudio, open data, and open science!
 Our seminars cover *most* of data science workflow from Wickham and Grollman (2016):
 
 ```{r add-workflow-image, echo=FALSE}
-knitr::include_graphics(here::here("img", "workflow.png"))
+knitr::include_graphics("assets/workflow.png")
 ```
 
 ---
@@ -53,7 +53,7 @@ Woelfle, Olliaro, and Todd (2011):
 # The Replication "Crisis"
 
 ```{r add-replication-img-1, echo=FALSE, out.width = "80%", fig.align = "center"}
-knitr::include_graphics(here::here("img", "Baker_2016_1.jpeg"))
+knitr::include_graphics("assets/Baker_2016_1.jpeg")
 ```
 
 ---
@@ -61,7 +61,7 @@ knitr::include_graphics(here::here("img", "Baker_2016_1.jpeg"))
 # Uneven Responses to the Replication "Crisis"
 
 ```{r add-replication-img-2, echo=FALSE, out.width = "90%", fig.align = "center"}
-knitr::include_graphics(here::here("img", "Baker_2016_2.jpg"))
+knitr::include_graphics("assets/Baker_2016_2.jpg")
 ```
 
 ---
@@ -69,7 +69,7 @@ knitr::include_graphics(here::here("img", "Baker_2016_2.jpg"))
 # Uneven Responses to the Replication "Crisis"
 
 ```{r add-replication-img-3, echo=FALSE, out.width = "80%", fig.align = "center"}
-knitr::include_graphics(here::here("img", "GertlerEtAl_2018_1.jpg"))
+knitr::include_graphics("assets/GertlerEtAl_2018_1.jpg")
 ```
 
 ---
@@ -77,7 +77,7 @@ knitr::include_graphics(here::here("img", "GertlerEtAl_2018_1.jpg"))
 # Uneven Responses to the Replication "Crisis"
 
 ```{r add-replication-img-4, echo=FALSE, out.width = "60%", fig.align = "center"}
-knitr::include_graphics(here::here("img", "GertlerEtAl_2018_2.jpg"))
+knitr::include_graphics("assets/GertlerEtAl_2018_2.jpg")
 ```
 
 ---
