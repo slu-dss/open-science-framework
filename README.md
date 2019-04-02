@@ -6,7 +6,7 @@
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/slu-dss/open-science-framework?branch=master&svg=true)](https://ci.appveyor.com/project/chris-prener/open-science-framework)
 
 ## Lesson Overview
-This repository contains some of the lesson materials used as part of our Open Science Framework brownbag presentation. Other materials are contained in the corresponding OSF repository.
+This repository contains some of the lesson materials used as part of our Open Science Framework brownbag presentation. Other materials are contained in the corresponding [OSF repository](https://osf.io/wv7cb/).
 
 ### Lesson Objectives
 By the end of this lesson, learners should be able to:
