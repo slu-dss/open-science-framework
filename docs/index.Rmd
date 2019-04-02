@@ -148,7 +148,7 @@ Possible elements:
 6. the data-manipulation code used to convert the raw data to the estimation data
 7. the estimation code used to produce the final tables and figures
 8. all code should run on any computer
-9. all of the above materials should be available online in a format that makes them citeable
+9. all of the above materials should be available online in a format that makes them cite-able
 
 ---
 
@@ -164,8 +164,8 @@ Possible elements:
 6. the data-manipulation code used to convert the raw data to the estimation data
 7. the estimation code used to produce the final tables and figures
 8. all code should run on any computer
-9. all of the above materials should be available online in a format that makes them citeable
-10. results are available without paywall
+9. all of the above materials should be available online in a format that makes them cite-able
+10. results are available without pay wall
 
 ---
 
@@ -174,7 +174,7 @@ Possible elements:
 1. Use the Open Science Framework (OSF) for:
     * pre-registration
     * cataloging **all** research materials
-    * creating a DOI number to make work citeable
+    * creating a DOI number to make work cite-able
     * publish pre-prints of findings
 
 ---
@@ -184,9 +184,9 @@ Possible elements:
 1. Use the Open Science Framework (OSF) for:
     * pre-registration
     * cataloging **all** research materials
-    * creating a DOI number to make work citeable
+    * creating a DOI number to make work cite-able
     * publish pre-prints of findings
-2. If you want to make data citeable independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
+2. If you want to make data cite-able independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
 
 ---
 
@@ -195,9 +195,9 @@ Possible elements:
 1. Use the Open Science Framework (OSF) for:
     * pre-registration
     * cataloging **all** research materials
-    * creating a DOI number to make work citeable
+    * creating a DOI number to make work cite-able
     * publish pre-prints of findings
-2. If you want to make data citeable independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
+2. If you want to make data cite-able independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
 3. If you want the most robust option for executable code, pair OSF with GitHub or Gitlab
 
 ```{r quick-analysis, echo=FALSE, include=FALSE}
