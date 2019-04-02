@@ -12,6 +12,7 @@ Web: https://slu-dss.github.io
 URL: https://github.com/slu-dss/open-science-framework
 BugReports: https://github.com/slu-dss/open-science-framework/issues
 Imports:
+    emojifont,
     here,
     knitr,
     rmarkdown,
