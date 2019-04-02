@@ -13,10 +13,10 @@ By the end of this lesson, learners should be able to...
 
 ### Lesson Resources
 * The [lesson slides](https://slu-dss.github.io/open-science-framework/) provide an overview of the replication crisis and what open science entails.
-* The [`references/`](/references) directory also contains other notes on changes to the repository, key topics, terms, data sources, and software.
 
 ### Extra Resources
-* ...
+* Baker, Monya. 2016. "1,500 scientists lift the lid on reproducibility." *Nature* 533(7604). ([Link](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970))
+* Gertler, Paul, Sebastian Galiani and Mauricio Romero. 2018. "How to make replication the norm." *Nature* 554:417-419. ([Link](https://www.nature.com/articles/d41586-018-02108-9))
 
 ## Contributor Code of Conduct
 Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
