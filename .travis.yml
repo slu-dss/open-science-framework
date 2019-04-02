@@ -18,5 +18,4 @@ matrix:
       os: osx
 
 script:
-  - Rscript -e "rmarkdown::render('notebook/wrangling-04.Rmd')"
-  - Rscript -e "rmarkdown::render('notebook/wrangling-04-complete.Rmd')"
+  - Rscript -e "rmarkdown::render('docs/index.Rmd')"
