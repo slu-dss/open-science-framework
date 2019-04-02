@@ -1,4 +1,4 @@
-manufacturer's name,vehicle model,Engine Displacement,YEAR,# of cylinders,transmission type,drivetrain type,city fuel efficiency (mpg),highway fuel efficency (mpg),vehicle class
+manufacturers_name,vehicle_model,disp,year,cyl,transmission_type,drivetrain_type,city,highway_fuel_efficency_mpg,vehicle_class
 audi,a4,1.8,1999,4,auto(l5),f,18,29,compact
 audi,a4,1.8,1999,4,manual(m5),f,21,29,compact
 audi,a4,2,2008,4,manual(m6),f,20,31,compact

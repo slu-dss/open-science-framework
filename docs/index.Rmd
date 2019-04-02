@@ -199,3 +199,47 @@ Possible elements:
     * publish pre-prints of findings
 2. If you want to make data citeable independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
 3. If you want the most robust option for executable code, pair OSF with GitHub or Gitlab
+
+```{r quick-analysis, echo=FALSE, include=FALSE}
+# load dependencies
+library(dplyr)
+library(ggplot2)
+library(here)
+library(janitor)
+library(readr)
+library(stargazer)
+
+# import and quickly clean data
+data <- read_csv(here("data", "original_data.csv")) %>%
+  clean_names() %>%
+  rename(
+    city = city_fuel_efficiency_mpg,
+    cyl = number_of_cylinders,
+    disp = engine_displacement
+  )
+
+# save analysis data
+write_csv(data, here("data", "analysis_data.csv"))
+
+# create plot
+ggplot(data = data, mapping = aes(disp, city)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(
+    title = "Example Plot",
+    caption = "Christopher Prener, Ph.D.",
+    x = "Engine Displacement",
+    y = "City Fuel Efficiency"
+    ) -> plot
+
+# save plot
+ggsave(here("results", "examplePlot.png"), plot)
+
+# create model
+model <- lm(city ~ cyl+disp, data = data)
+
+# create table
+stargazer(model, title = "Example Output", type = "html", omit.stat = "rsq", 
+          df = FALSE, star.cutoffs= c(0.05, 0.01, 0.001),
+          out = here("results", "exampleTable.html"))
+```
