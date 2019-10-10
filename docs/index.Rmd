@@ -2,7 +2,7 @@
 title: "Making Science More Open"
 subtitle: "An Introduction to the Open Science Framework"
 author: "Chris Prener"
-date: "April 2nd, 2019"
+date: "October 10th, 2019"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -14,7 +14,7 @@ output:
 
 # What We're All About
 
-We're in our **seventh semester** of offering seminars on using `R` for data science.
+We're in our **eighth semester** of offering seminars on using `R` for data science.
 
 </br>
 
@@ -82,6 +82,21 @@ knitr::include_graphics("assets/GertlerEtAl_2018_2.jpg")
 
 ---
 
+# Public Access Pressures on PIs
+
+* In 2003, NIH adopted a formal policy on sharing research data:
+
+> Expects investigators seeking more than $500K in direct support in any given year to submit a data sharing plan with their application or to indicate why data sharing is not possible.	
+
+* NIH also expects publications to be submitted to PubMed Central upon publication.
+* NSF also has policies on sharing data and software from funded work:
+
+> b.	Investigators are expected to share with other researchers, at no more than incremental cost and within a reasonable time, the primary data, samples, physical collections and other supporting materials created or gathered in the course of work under NSF grants. Grantees are expected to encourage and facilitate such sharing.
+
+> c.	Investigators and grantees are encouraged to share software and inventions created under the grant or otherwise make them or their products widely available and usable.
+
+---
+
 # Open Science to the Rescue?
 
 One problem is that we do not have a cohesive definition of open science. Is it publishing data online? Providing code? Something else?
@@ -111,9 +126,9 @@ Possible elements:
 
 Possible elements:
 
-1. pre-registered hypotheses
-2. protocols and research materials
-3. research logs
+1. **pre-registered hypotheses**
+2. **protocols and research materials**
+3. **research logs**
 4. the raw data used in the study
 5. the final estimation data set produced after data cleaning and variable manipulation
 6. the data-manipulation code used to convert the raw data to the estimation data
@@ -130,9 +145,74 @@ Possible elements:
 3. research logs
 4. the raw data used in the study
 5. the final estimation data set produced after data cleaning and variable manipulation
+6. **the data-manipulation code used to convert the raw data to the estimation data**
+7. **the estimation code used to produce the final tables and figures**
+8. **all code should run on any computer**
+
+---
+
+# What is open source software?
+
+From ["The WIRED Guide to Open Souce Software"](https://www.wired.com/story/wired-guide-open-source-software/):
+
+> The open source software movement grew out of the related, but separate, "free software" movement. In 1983, Richard Stallman, at the time a programmer at the MIT Artificial Intelligence Laboratory, said he would create a free alternative to the Unix operating system, then owned by AT&T; Stallman dubbed his alternative GNU, a recursive acronym for "GNU's Not Unix."
+
+> For Stallman, the idea of "free" software was about more than giving software away. It was about ensuring that users were free to use software as they saw fit, free to study its source code, free to modify it for their own purposes, and free to share it with others. Stallman released his code under a license known as the GNU Public License, or GPL, which guarantees users those four software freedoms. The GPL is a "viral" license, meaning that anyone who creates software based on code licensed under the GPL must also release that derivative code under a GPL license.
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. pre-registered hypotheses
+2. protocols and research materials
+3. research logs
+4. the raw data used in the study
+5. the final estimation data set produced after data cleaning and variable manipulation
+6. **the data-manipulation code used to convert the raw data to the estimation data**
+7. **the estimation code used to produce the final tables and figures**
+8. **all code should run on any computer**
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. pre-registered hypotheses
+2. protocols and research materials
+3. research logs
+4. the raw data used in the study
+5. the final estimation data set produced after data cleaning and variable manipulation
 6. the data-manipulation code used to convert the raw data to the estimation data
 7. the estimation code used to produce the final tables and figures
 8. all code should run on any computer
+9. **all of the above materials should be available online in a format that makes them cite-able**
+
+---
+
+# What is a DOI?
+
+From the [University of Illinois-Chicago](https://library.uic.edu/help/article/1966/what-is-a-doi-and-how-do-i-use-them-in-citations/):
+
+> A DOI, or Digital Object Identifier, is a string of numbers, letters and symbols used to permanently identify an article or document and link to it on the web. A DOI will help your reader easily locate a document from your citation. Think of it like a Social Security number for the article you’re citing — it will always refer to that article, and only that one.
+
+---
+
+# Open Science to the Rescue!
+
+Possible elements:
+
+1. pre-registered hypotheses
+2. protocols and research materials
+3. research logs
+4. the raw data used in the study
+5. the final estimation data set produced after data cleaning and variable manipulation
+6. the data-manipulation code used to convert the raw data to the estimation data
+7. the estimation code used to produce the final tables and figures
+8. all code should run on any computer
+9. **all of the above materials should be available online in a format that makes them cite-able**
 
 ---
 
@@ -149,6 +229,17 @@ Possible elements:
 7. the estimation code used to produce the final tables and figures
 8. all code should run on any computer
 9. all of the above materials should be available online in a format that makes them cite-able
+10. **results are available without pay wall**
+
+---
+
+# What is Preprint?
+
+From [PLOS](https://www.plos.org/why-preprint):
+
+> A preprint is a version of a scientific manuscript posted on a public server prior to formal peer review. As soon it's posted, your preprint becomes a permanent part of the scientific record, citable with its own unique DOI.
+
+> Preprints allow you to share your results when you’re ready -- whether you’re researching an emergent disaster, applying for a grant, or just excited to broadcast your work to a wider audience.
 
 ---
 
@@ -165,40 +256,66 @@ Possible elements:
 7. the estimation code used to produce the final tables and figures
 8. all code should run on any computer
 9. all of the above materials should be available online in a format that makes them cite-able
-10. results are available without pay wall
+10. **results are available without pay wall**
+
+---
+
+# An Open Science Toolkit
+
+```{r add-toolbox, echo=FALSE, out.width = "90%", fig.align = "center"}
+knitr::include_graphics("assets/toolbox.png")
+```
 
 ---
 
 # How do we do this?
 
-1. Use the Open Science Framework (OSF) for:
-    * pre-registration
-    * cataloging **all** research materials
-    * creating a DOI number to make work cite-able
-    * publish pre-prints of findings
+1. Use open source software languages like `R` or Python for as much of your data wrangling and analysis workflow as possible.
 
 ---
 
 # How do we do this?
 
-1. Use the Open Science Framework (OSF) for:
-    * pre-registration
-    * cataloging **all** research materials
-    * creating a DOI number to make work cite-able
-    * publish pre-prints of findings
-2. If you want to make data cite-able independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
+1. Use open source software languages like `R` or Python for as much of your data wrangling and analysis workflow as possible.
+2. **Use GitHub or GitLab to store, share, and track changes to analysis data code using Git, a version control software package.**
 
 ---
 
 # How do we do this?
 
-1. Use the Open Science Framework (OSF) for:
+1. Use open source software languages like `R` or Python for as much of your data wrangling and analysis workflow as possible.
+2. Use GitHub or GitLab to store, share, and track changes to analysis data code using Git, a version control software package.
+3. **Use the Open Science Framework (OSF) for:**
+    * **pre-registration**
+    * **cataloging all research materials (it can link back to your GitHub repository)**
+    * **creating a DOI number to make work cite-able**
+    * **publish pre-prints of findings**
+
+---
+
+# How do we do this?
+
+1. Use open source software languages like `R` or Python for as much of your data wrangling and analysis workflow as possible.
+2. Use GitHub or GitLab to store, share, and track changes to analysis data code using Git, a version control software package.
+3. Use the Open Science Framework (OSF) for:
     * pre-registration
-    * cataloging **all** research materials
+    * cataloging all research materials (it can link back to your GitHub repository)
     * creating a DOI number to make work cite-able
     * publish pre-prints of findings
-2. If you want to make data cite-able independent of a single project, use Zenodo, figshare, or another service that creates DOI numbers for data sets
-3. If you want the most robust option for executable code, pair OSF with GitHub or Gitlab
+4. **If you want to make data cite-able independent of a single project, use Zenodo or another service that creates DOI numbers specifically for data sets.**
+
+---
+
+# It Isn't That Easy, Of Course...
+
+```{r add-owl, echo=FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("assets/owl.jpg")
+```
+
+---
+class: inverse, center, middle
+
+# Thank You for Coming!
 
 ```{r quick-analysis, echo=FALSE, include=FALSE}
 # load dependencies
